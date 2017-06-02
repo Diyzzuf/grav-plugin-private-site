@@ -3,6 +3,14 @@
 
 The **Private Site** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It provide an authentification form to keep private your Grav site or part of it.
 
+
+**Requires Login, Form, Email plugins, and integrated with Admin plugin, on Page=>Options. **
+
+ - Adding and Managing user : https://learn.getgrav.org/admin-panel/faq#adding-and-managing-users
+ - ACL : https://learn.getgrav.org/advanced/groups-and-permissions
+ - Allow User Registration : https://github.com/getgrav/grav-plugin-login/blob/develop/README.md#allow-user-registration
+
+
 ## Installation
 
 Installing the Private Site plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
