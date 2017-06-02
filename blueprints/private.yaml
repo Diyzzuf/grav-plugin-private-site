@@ -1,0 +1,25 @@
+title: Private
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        options:
+          fields:
+            publishing:
+              fields:
+                header.private:
+                  ordering@: 2
+                  type: toggle
+                  label: PLUGIN_PRIVATE.MAKE_PRIVATE
+                  toggleable: true
+                  highlight: 1
+                  default: 0
+                  options:
+                    1: Yes
+                    0: No
+                  validate:
+                    type: bool

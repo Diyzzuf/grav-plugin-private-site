@@ -1,0 +1,42 @@
+name: Private Site
+version: 0.1.0
+description: ( ON DEVELOPMENT ) Enables user authentication and login screen for private site or page.
+icon: plug
+author:
+  name: DiYzzuf
+  email: diyzzuf@gmail.com
+homepage: https://github.com/diyzzuf/grav-plugin-private-site
+keywords: grav, plugin, etc
+bugs: https://github.com/diyzzuf/grav-plugin-private-site/issues
+docs: https://github.com/diyzzuf/grav-plugin-private-site/blob/develop/README.md
+dependencies:
+    - { name: grav, version: '>=1.3.0-rc.3' }
+    - { name: form, version: '>=2.4.0' }
+    - { name: email, version: '~2.0' }
+    - { name: login, version: '~2.0' }
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_PRIVATE.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_PRIVATE.ENABLED
+        0: PLUGIN_PRIVATE.DISABLED
+      validate:
+        type: bool
+    private_site:
+      type: toggle
+      label: PLUGIN_PRIVATE.PRIVATE
+      help: PLUGIN_PRIVATE.PRIVATE_HELP
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_PRIVATE.ENABLED
+        0: PLUGIN_PRIVATE.DISABLED
+      validate:
+        type: bool
