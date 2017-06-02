@@ -4,7 +4,7 @@
 The **Private Site** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It provide an authentification form to keep private your Grav site or part of it.
 
 
-**Requires Login, Form, Email plugins, and integrated with Admin plugin, on Page=>Options. **
+**Requires Login, Form, Email plugins, and integrated with Admin plugin, on Page=>Options**
 
  - Adding and Managing user : https://learn.getgrav.org/admin-panel/faq#adding-and-managing-users
  - ACL : https://learn.getgrav.org/advanced/groups-and-permissions
