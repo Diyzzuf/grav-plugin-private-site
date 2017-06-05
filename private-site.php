@@ -100,17 +100,17 @@ class PrivateSitePlugin extends Plugin
     public function onBlueprintCreated(Event $event)
     {
         static $inEvent = false;
+        $newtype = $event['type'];
         /** @var Data\Blueprint $blueprint */
-        if (0 === strpos($newtype, 'modular/')) {
-        } else {
-        $blueprint = $event['blueprint'];
-        if (!$inEvent && $blueprint->get('form/fields/tabs', null, '/')) {
-            $inEvent = true;
-            $blueprints = new Blueprints(__DIR__ . '/blueprints/');
-            $extends = $blueprints->get('private');
-            $blueprint->extend($extends, false);
-            $inEvent = false;
-         }
+        if (strpos($newtype, 'modular/') !== 0) {
+            $blueprint = $event['blueprint'];
+            if (!$inEvent && $blueprint->get('form/fields/tabs', null, '/')) {
+                $inEvent = true;
+                $blueprints = new Blueprints(__DIR__ . '/blueprints/');
+                $extends = $blueprints->get('private');
+                $blueprint->extend($extends, false);
+                $inEvent = false;
+            }
         }
     }
 
