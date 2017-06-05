@@ -106,7 +106,7 @@ class PrivateSitePlugin extends Plugin
             $inEvent = true;
             $blueprints = new Blueprints(__DIR__ . '/blueprints/');
             $extends = $blueprints->get('private');
-            $blueprint->extend($extends, true);
+            $blueprint->extend($extends, false);
             $inEvent = false;
         }
     }
