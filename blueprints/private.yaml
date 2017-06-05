@@ -5,14 +5,15 @@ extends@:
 
 form:
   fields:
-    unset@: true
     tabs:
       type: tabs
       active: 1
 
       fields:
         content:
+          # unset@: true
         options:
+          # unset@: true
           fields:
             publishing:
               fields:
@@ -28,3 +29,4 @@ form:
                   validate:
                     type: bool
           advanced:
+            # unset@: true
