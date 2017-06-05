@@ -5,12 +5,15 @@ form:
     tabs:
       type: tabs
       active: 1
-
       fields:
+        content:
         options:
           fields:
             publishing:
               fields:
+                
+                header.published:
+                  ordering@: 1
                 header.private:
                   type: toggle
                   label: PLUGIN_PRIVATE.MAKE_PRIVATE
@@ -22,5 +25,4 @@ form:
                     1: No
                   validate:
                     type: bool
-                header.published:
-                  ordering@: 1
+        advanced:
