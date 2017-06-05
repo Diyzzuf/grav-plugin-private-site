@@ -1,7 +1,4 @@
 title: Private
-extends@:
-    type: default
-    context: blueprints://pages
 
 form:
   fields:
@@ -10,17 +7,14 @@ form:
       active: 1
 
       fields:
-        content:
-          # unset@: true
         options:
-          # unset@: true
           fields:
             publishing:
               fields:
                 header.private:
                   type: toggle
                   label: PLUGIN_PRIVATE.MAKE_PRIVATE
-                  ordering@: header.published
+                  ordering@: 2
                   toggleable: true
                   highlight: 0
                   options:
@@ -28,5 +22,5 @@ form:
                     1: No
                   validate:
                     type: bool
-          advanced:
-            # unset@: true
+                header.published:
+                  ordering@: 1
