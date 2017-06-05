@@ -18,6 +18,7 @@ form:
                   toggleable: true
                   label: PLUGIN_PRIVATE.MAKE_PRIVATE
                   highlight: 1
+                  default: 0
                   options:
                     1: PLUGIN_PRIVATE.YES
                     0: PLUGIN_PRIVATE.NO
