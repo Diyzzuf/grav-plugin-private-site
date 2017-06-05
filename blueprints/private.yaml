@@ -17,7 +17,6 @@ form:
                 header.private:
                   type: toggle
                   label: PLUGIN_PRIVATE.MAKE_PRIVATE
-                  ordering@: 2
                   toggleable: true
                   highlight: 0
                   options:
