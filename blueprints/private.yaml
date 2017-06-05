@@ -1,5 +1,3 @@
-title: Private
-
 form:
   fields:
     tabs:
@@ -15,14 +13,14 @@ form:
                 header.published:
                   ordering@: 1
                 header.private:
-                  type: toggle
-                  label: PLUGIN_PRIVATE.MAKE_PRIVATE
                   ordering@: 2
+                  type: toggle
                   toggleable: true
-                  highlight: 0
+                  label: PLUGIN_PRIVATE.MAKE_PRIVATE
+                  highlight: 1
                   options:
-                    0: Yes
-                    1: No
+                    1: PLUGIN_PRIVATE.YES
+                    0: PLUGIN_PRIVATE.NO
                   validate:
                     type: bool
         advanced:
