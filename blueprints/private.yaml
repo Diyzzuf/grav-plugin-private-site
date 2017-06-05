@@ -12,14 +12,13 @@ form:
             publishing:
               fields:
                 header.private:
-                  ordering@: 2
                   type: toggle
                   label: PLUGIN_PRIVATE.MAKE_PRIVATE
+                  ordering@: 1
                   toggleable: true
-                  highlight: 1
-                  default: 0
+                  highlight: 0
                   options:
-                    1: Yes
-                    0: No
+                    0: Yes
+                    1: No
                   validate:
                     type: bool
