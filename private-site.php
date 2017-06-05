@@ -101,7 +101,6 @@ class PrivateSitePlugin extends Plugin
     {
         static $inEvent = false;
         $newtype = $event['type'];
-        /** @var Data\Blueprint $blueprint */
         if (strpos($newtype, 'modular/') !== 0) {
             $blueprint = $event['blueprint'];
             if (!$inEvent && $blueprint->get('form/fields/tabs', null, '/')) {
