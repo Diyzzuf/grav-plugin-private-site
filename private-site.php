@@ -117,7 +117,6 @@ class PrivateSitePlugin extends Plugin
      * Add page template types.
      */
     public function onGetPageTemplates(Event $event){
-        /** @var Types $types */
         $types = $event->types;
         $types->register('private');
     }
