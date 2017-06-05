@@ -101,6 +101,8 @@ class PrivateSitePlugin extends Plugin
     {
         static $inEvent = false;
         /** @var Data\Blueprint $blueprint */
+        if (0 === strpos($newtype, 'modular/')) {
+        } else {
         $blueprint = $event['blueprint'];
         if (!$inEvent && $blueprint->get('form/fields/tabs', null, '/')) {
             $inEvent = true;
@@ -108,6 +110,7 @@ class PrivateSitePlugin extends Plugin
             $extends = $blueprints->get('private');
             $blueprint->extend($extends, false);
             $inEvent = false;
+         }
         }
     }
 
