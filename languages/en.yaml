@@ -7,3 +7,5 @@ PLUGIN_PRIVATE:
   PRIVATE_HELP: "Make the entire site private and protected by password. If disabled, only pages with the private parameter are protected."
   MAKE_PRIVATE: "Private Page"
   MAKE_PRIVATE_HELP: "Make this page protected by password. Only registered user can view it."
+  YES: "Yes"
+  NO: "No"
