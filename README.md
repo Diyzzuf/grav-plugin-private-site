@@ -1,4 +1,4 @@
-# Private Site Plugin  ( ON DEVELOPMENT )
+# Private Site Plugin  ( BETA )
 
 
 The **Private Site** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It provide an authentification form to keep private your Grav site or part of it.
